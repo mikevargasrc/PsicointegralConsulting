@@ -1,0 +1,169 @@
+:root {
+  --primary: #14b8a6;
+  --primary-dark: #0f766e;
+  --accent: #dff7ea;
+  --text: #214b44;
+  --muted: #5f7f77;
+}
+
+body {
+  background: linear-gradient(135deg, #ebfffa 0%, #f8fffc 55%, #dff7ea 100%);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  color: var(--primary-dark) !important;
+}
+
+.nav-link {
+  color: var(--text) !important;
+}
+
+.hero {
+  padding: 6rem 0 5rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.15), transparent 35%);
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: rgba(20, 184, 166, 0.12);
+  color: var(--primary-dark);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  color: var(--primary-dark);
+  line-height: 1.2;
+}
+
+.hero-text {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.card-accent {
+  background: linear-gradient(145deg, #ffffff 0%, #f1fffb 100%);
+  border: none;
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 45px rgba(15, 118, 110, 0.14);
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(145deg, #ffffff 0%, #f4fffb 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 40px rgba(15, 118, 110, 0.14);
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: scaleX(-1);
+  border: 5px solid #dff7ea;
+  box-shadow: 0 10px 25px rgba(20, 184, 166, 0.16);
+  margin-bottom: 1rem;
+}
+
+.profile-name {
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.profile-role {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.profile-review {
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.feature-card,
+.modern-card {
+  border-radius: 1rem;
+  border: 1px solid #d9f4eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover,
+.modern-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(20, 184, 166, 0.14);
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #14b8a6, #25d366);
+  border: 0;
+  color: white;
+  box-shadow: 0 12px 22px rgba(20, 184, 166, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(20, 184, 166, 0.3);
+}
+
+.section-title {
+  color: var(--primary-dark);
+}
+
+/* Estilos para la sección de estadísticas */
+#sobre {
+  background: linear-gradient(180deg, rgba(223,247,234,0.28), rgba(255,255,255,0));
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+}
+
+.stat-number {
+  color: var(--primary-dark);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.stat-label {
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  font-weight: 700;
+}
+
+footer { background: #f1fffb; }
